@@ -1,171 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hydrogen Switch – Upgrade Your Hydration</title>
 
   <script>
     (function (s, e, n, d, er) {
-      s["Sender"] = er;
+      s['Sender'] = er;
       s[er] = s[er] || function () {
-        (s[er].q = s[er].q || []).push(arguments);
+        (s[er].q = s[er].q || []).push(arguments)
       }, s[er].l = 1 * new Date();
       var a = e.createElement(n),
           m = e.getElementsByTagName(n)[0];
       a.async = 1;
       a.src = d;
-      m.parentNode.insertBefore(a, m);
-    })(window, document, "script", "https://cdn.sender.net/accounts_resources/universal.js", "sender");
-    sender("5caa35a87c3785");
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+    sender('5caa35a87c3785');
   </script>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       line-height: 1.6;
       color: #333;
-      background-color: #f5f7fa;
+      background-color: #f5f5f5;
     }
-
     .container {
       width: 90%;
       max-width: 960px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 40px 20px;
     }
-
     header {
-      background: linear-gradient(180deg, #0f395a 0%, #15486f 100%);
+      background: #0f395a;
       color: #fff;
       padding: 80px 0;
       text-align: center;
+      position: relative;
     }
-
-    .hero-content {
-      max-width: 760px;
-      margin: 0 auto;
-    }
-
     header h1 {
       margin: 0 0 20px;
-      font-size: 48px;
-      line-height: 1.15;
-      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.2;
     }
-
     header p {
-      font-size: 20px;
-      margin: 0 auto 35px;
+      font-size: 18px;
+      margin-bottom: 40px;
       max-width: 700px;
-      color: rgba(255, 255, 255, 0.92);
+      margin-left: auto;
+      margin-right: auto;
     }
-
     .cta-form {
-      max-width: 540px;
+      max-width: 480px;
       margin: 0 auto;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
     }
-
-    .note {
-      margin-top: 14px;
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    section {
-      padding: 50px 0;
-    }
-
-    .card {
+    .features, .benefits {
       background-color: #fff;
-      border-radius: 12px;
-      padding: 40px 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      padding: 40px 20px;
+      margin: 40px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
-    h2 {
+    .features h2, .benefits h2 {
       margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 30px;
+      font-size: 28px;
       color: #0f395a;
     }
-
-    ul {
+    .features ul, .benefits ul {
       list-style: none;
       padding: 0;
-      margin: 0;
     }
-
-    li {
-      margin: 16px 0;
-      padding-left: 28px;
+    .features li, .benefits li {
+      margin: 15px 0;
+      padding-left: 25px;
       position: relative;
-      font-size: 17px;
     }
-
-    li::before {
+    .features li:before, .benefits li:before {
       content: "✓";
       color: #00aaff;
       position: absolute;
       left: 0;
       top: 0;
       font-size: 20px;
-      line-height: 1;
-      font-weight: bold;
+      line-height: 20px;
     }
-
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 20px 0;
       color: #777;
       font-size: 14px;
     }
-
-    @media (max-width: 768px) {
-      header {
-        padding: 60px 0;
-      }
-
-      header h1 {
-        font-size: 34px;
-      }
-
-      header p {
-        font-size: 18px;
-      }
-
-      .card {
-        padding: 30px 22px;
-      }
-
-      h2 {
-        font-size: 26px;
-      }
-    }
-
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
       header h1 {
         font-size: 28px;
-      }
-
-      header p {
-        font-size: 17px;
-      }
-
-      .cta-form {
-        padding: 16px;
-      }
-
-      li {
-        font-size: 16px;
       }
     }
   </style>
@@ -173,54 +103,37 @@
 <body>
   <header>
     <div class="container">
-      <div class="hero-content">
-        <h1>Upgrade Your Hydration in 5 Minutes a Day</h1>
-        <p>
-          Discover 5 simple hydration upgrades used by athletes, entrepreneurs,
-          and biohackers to boost energy, focus, and recovery.
-        </p>
+      <h1>Upgrade Your Hydration in 5 Minutes a Day</h1>
+      <p>Discover 5 simple hydration upgrades used by athletes, entrepreneurs, and biohackers to boost energy, focus, and recovery.</p>
 
-        <div class="cta-form">
-          <div
-            style="text-align: left;"
-            class="sender-form-field"
-            data-sender-form-id="azpgm2"
-          ></div>
-        </div>
-
-        <div class="note">
-          Get instant access to your free guide.
-        </div>
+      <div class="cta-form">
+        <div style="text-align: left" class="sender-form-field" data-sender-form-id="azpgm2"></div>
       </div>
     </div>
   </header>
 
   <section class="features">
     <div class="container">
-      <div class="card">
-        <h2>What You'll Learn</h2>
-        <ul>
-          <li>Why most people are still dehydrated and how to fix it.</li>
-          <li>The best times to hydrate for optimal energy and focus.</li>
-          <li>The difference between plain water and upgraded hydration.</li>
-          <li>Simple daily routines that make hydration effortless.</li>
-          <li>The hydration upgrade tool biohackers and athletes swear by.</li>
-        </ul>
-      </div>
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Why most people are still dehydrated and how to fix it.</li>
+        <li>The best times to hydrate for optimal energy and focus.</li>
+        <li>The difference between plain water and upgraded hydration.</li>
+        <li>Simple daily routines that make hydration effortless.</li>
+        <li>The hydration upgrade tool biohackers and athletes swear by.</li>
+      </ul>
     </div>
   </section>
 
   <section class="benefits">
     <div class="container">
-      <div class="card">
-        <h2>Why Download the Guide?</h2>
-        <ul>
-          <li>Immediate, actionable tips you can implement today.</li>
-          <li>Enjoy improved energy levels and mental clarity.</li>
-          <li>Support faster recovery and better performance.</li>
-          <li>It's completely free and only takes a few minutes to read.</li>
-        </ul>
-      </div>
+      <h2>Why Download the Guide?</h2>
+      <ul>
+        <li>Immediate, actionable tips you can implement today.</li>
+        <li>Enjoy improved energy levels and mental clarity.</li>
+        <li>Support faster recovery and better performance.</li>
+        <li>It's completely free and only takes a few minutes to read.</li>
+      </ul>
     </div>
   </section>
 
