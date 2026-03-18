@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hydrogen Switch – Upgrade Your Hydration</title>
+  <title>Hydrogen Switch – Free Hydration Upgrade Guide</title>
+  <meta
+    name="description"
+    content="Get the free Hydration Upgrade Guide and discover simple daily hydration strategies to support energy, focus, and recovery."
+  />
 
+  <!-- Sender Script -->
   <script>
     (function (s, e, n, d, er) {
       s["Sender"] = er;
@@ -25,209 +30,457 @@
       box-sizing: border-box;
     }
 
+    :root {
+      --bg-dark: #0b3553;
+      --bg-dark-2: #123f61;
+      --accent: #19b5ff;
+      --accent-dark: #0ea0e6;
+      --text: #163047;
+      --muted: #6b7b8c;
+      --card: rgba(255, 255, 255, 0.1);
+      --white: #ffffff;
+      --light: #f4f8fb;
+      --shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      color: var(--text);
+      background: var(--light);
       line-height: 1.6;
-      color: #333;
-      background-color: #f5f7fa;
     }
 
     .container {
-      width: 90%;
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    header {
-      background: linear-gradient(180deg, #0f395a 0%, #15486f 100%);
-      color: #fff;
-      padding: 80px 0;
-      text-align: center;
-    }
-
-    .hero-content {
-      max-width: 760px;
+      width: min(1120px, 92%);
       margin: 0 auto;
     }
 
-    header h1 {
-      margin: 0 0 20px;
-      font-size: 48px;
-      line-height: 1.15;
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(25, 181, 255, 0.16), transparent 28%),
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.08), transparent 22%),
+        linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-dark-2) 100%);
+      color: var(--white);
+      padding: 72px 0 54px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 13px;
       font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
     }
 
-    header p {
-      font-size: 20px;
-      margin: 0 auto 35px;
-      max-width: 700px;
+    .hero h1 {
+      margin: 0 0 18px;
+      font-size: 56px;
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p.lead {
+      margin: 0 0 22px;
+      font-size: 21px;
       color: rgba(255, 255, 255, 0.92);
+      max-width: 640px;
     }
 
-    .cta-form {
-      max-width: 540px;
-      margin: 0 auto;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
+    .benefit-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 12px;
+      margin: 0 0 24px;
+      padding: 0;
+      list-style: none;
     }
 
-    .note {
-      margin-top: 14px;
+    .benefit-strip li {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #eaf7ff;
       font-size: 14px;
-      color: rgba(255, 255, 255, 0.8);
+      font-weight: 600;
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    section {
-      padding: 50px 0;
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+      margin-top: 18px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 14px;
+    }
+
+    .trust-row span::before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .form-shell {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .form-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 28px 24px 22px;
+      text-align: left;
+    }
+
+    .form-kicker {
+      color: var(--accent-dark);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .form-card h2 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      line-height: 1.1;
+      color: #071c2d;
+    }
+
+    .form-card p {
+      margin: 0 0 18px;
+      color: #5d6b78;
+      font-size: 15px;
+    }
+
+    .sender-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sender-form-field {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sender-form-field > div {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 auto !important;
+    }
+
+    .sender-form-field input,
+    .sender-form-field textarea,
+    .sender-form-field select {
+      border-radius: 10px !important;
+      border: 1px solid #d7e2ea !important;
+      box-shadow: none !important;
+    }
+
+    .sender-form-field button {
+      background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%) !important;
+      border: none !important;
+      border-radius: 10px !important;
+      color: #fff !important;
+      font-weight: 700 !important;
+      box-shadow: 0 12px 28px rgba(25, 181, 255, 0.22) !important;
+    }
+
+    .micro-note {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 13px;
+      color: #6a7785;
+    }
+
+    .micro-note strong {
+      color: #12283b;
+    }
+
+    .section {
+      padding: 68px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .section-heading h3 {
+      margin: 0 0 10px;
+      font-size: 38px;
+      color: #0e2e47;
+    }
+
+    .section-heading p {
+      margin: 0 auto;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
     }
 
     .card {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 40px 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 28px;
+      box-shadow: 0 10px 32px rgba(15, 57, 90, 0.08);
+      border: 1px solid rgba(15, 57, 90, 0.05);
     }
 
-    h2 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 30px;
+    .card h4 {
+      margin: 0 0 18px;
+      font-size: 26px;
       color: #0f395a;
     }
 
-    ul {
+    .feature-list,
+    .value-list {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
-    li {
-      margin: 16px 0;
-      padding-left: 28px;
+    .feature-list li,
+    .value-list li {
       position: relative;
+      padding-left: 30px;
+      margin: 16px 0;
+      color: #304659;
       font-size: 17px;
     }
 
-    li::before {
+    .feature-list li::before,
+    .value-list li::before {
       content: "✓";
-      color: #00aaff;
       position: absolute;
       left: 0;
       top: 0;
+      color: var(--accent);
+      font-weight: 800;
       font-size: 20px;
       line-height: 1;
-      font-weight: bold;
+    }
+
+    .bottom-cta {
+      padding: 0 0 76px;
+    }
+
+    .bottom-cta-box {
+      background: linear-gradient(180deg, #0f395a 0%, #133f62 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 42px 28px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .bottom-cta-box h3 {
+      margin: 0 0 12px;
+      font-size: 36px;
+    }
+
+    .bottom-cta-box p {
+      margin: 0 auto 20px;
+      max-width: 720px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 18px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      padding: 16px 28px;
+      border-radius: 999px;
+      box-shadow: 0 14px 32px rgba(25, 181, 255, 0.28);
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
-      color: #777;
+      padding: 28px 20px 40px;
       font-size: 14px;
+      color: #748290;
     }
 
-    @media (max-width: 768px) {
-      header {
-        padding: 60px 0;
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-2 {
+        grid-template-columns: 1fr;
       }
 
-      header h1 {
+      .hero {
+        padding-top: 58px;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+
+      .hero p.lead {
+        font-size: 19px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
         font-size: 34px;
       }
 
-      header p {
-        font-size: 18px;
-      }
-
-      .card {
-        padding: 30px 22px;
-      }
-
-      h2 {
-        font-size: 26px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 28px;
-      }
-
-      header p {
+      .hero p.lead {
         font-size: 17px;
       }
 
-      .cta-form {
-        padding: 16px;
+      .form-card h2,
+      .section-heading h3,
+      .bottom-cta-box h3 {
+        font-size: 28px;
       }
 
-      li {
-        font-size: 16px;
+      .card {
+        padding: 24px 20px;
+      }
+
+      .benefit-strip li {
+        font-size: 13px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
-      <div class="hero-content">
-        <h1>Upgrade Your Hydration in 5 Minutes a Day</h1>
-        <p>
-          Discover 5 simple hydration upgrades used by athletes, entrepreneurs,
-          and biohackers to boost energy, focus, and recovery.
-        </p>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Free Guide + Instant Access</div>
+          <h1>Upgrade Your Hydration in 5 Minutes a Day</h1>
+          <p class="lead">
+            Discover 5 simple hydration upgrades used by athletes, entrepreneurs,
+            and biohackers to support energy, focus, and recovery.
+          </p>
 
-        <div class="cta-form">
-          <div
-            style="text-align: left;"
-            class="sender-form-field"
-            data-sender-form-id="azpgm2"
-          ></div>
+          <ul class="benefit-strip">
+            <li>Fast Daily Routine</li>
+            <li>Beginner Friendly</li>
+            <li>No Fluff</li>
+            <li>Free Instant Download</li>
+          </ul>
+
+          <div class="trust-row">
+            <span>Free access</span>
+            <span>Quick read</span>
+            <span>Actionable tips</span>
+          </div>
         </div>
 
-        <div class="note">
-          Get instant access to your free guide.
+        <div class="form-shell">
+          <div class="form-card">
+            <div class="form-kicker">Get the Guide</div>
+            <h2>Enter your email for instant access</h2>
+            <p>
+              Get the Hydration Upgrade Guide delivered so you can start using
+              smarter hydration habits right away.
+            </p>
+
+            <div class="sender-wrap">
+              <div class="sender-form-field" data-sender-form-id="azpgm2"></div>
+            </div>
+
+            <div class="micro-note">
+              <strong>Free guide.</strong> No spam. Unsubscribe anytime.
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="features">
+  <section class="section">
     <div class="container">
-      <div class="card">
-        <h2>What You'll Learn</h2>
-        <ul>
-          <li>Why most people are still dehydrated and how to fix it.</li>
-          <li>The best times to hydrate for optimal energy and focus.</li>
-          <li>The difference between plain water and upgraded hydration.</li>
-          <li>Simple daily routines that make hydration effortless.</li>
-          <li>The hydration upgrade tool biohackers and athletes swear by.</li>
-        </ul>
+      <div class="section-heading">
+        <h3>What you’ll learn</h3>
+        <p>
+          Simple ideas you can apply immediately without turning your routine
+          into a full-time project.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h4>Inside the guide</h4>
+          <ul class="feature-list">
+            <li>Why most people are still dehydrated and how to fix it.</li>
+            <li>The best times to hydrate for optimal energy and focus.</li>
+            <li>The difference between plain water and upgraded hydration.</li>
+            <li>Simple daily routines that make hydration effortless.</li>
+            <li>The hydration upgrade tool biohackers and athletes swear by.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Why it matters</h4>
+          <ul class="value-list">
+            <li>Immediate, actionable tips you can implement today.</li>
+            <li>Support better daily energy and mental clarity.</li>
+            <li>Improve hydration habits without overcomplicating things.</li>
+            <li>Build a stronger routine with simple, practical upgrades.</li>
+            <li>Completely free and quick to read.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="benefits">
+  <section class="bottom-cta">
     <div class="container">
-      <div class="card">
-        <h2>Why Download the Guide?</h2>
-        <ul>
-          <li>Immediate, actionable tips you can implement today.</li>
-          <li>Enjoy improved energy levels and mental clarity.</li>
-          <li>Support faster recovery and better performance.</li>
-          <li>It's completely free and only takes a few minutes to read.</li>
-        </ul>
+      <div class="bottom-cta-box">
+        <h3>Start with the free guide</h3>
+        <p>
+          Enter your email above to get instant access and begin upgrading your
+          hydration routine today.
+        </p>
+        <a href="#top" class="cta-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+          Get Instant Access
+        </a>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      &copy; 2026 Hydrogen Switch. All rights reserved.
-    </div>
+    &copy; 2026 Hydrogen Switch. All rights reserved.
   </footer>
 </body>
 </html>
